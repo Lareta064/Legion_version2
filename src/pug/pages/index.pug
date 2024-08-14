@@ -1,0 +1,27 @@
+extends ../layouts/layout.pug
+
+block content
+	//====== HEADER=========
+	include ../sections/_header.pug
+	
+	//======MAIN =========
+	main.main
+		include ../sections/_hero.pug
+		include ../sections/_about.pug
+		include ../sections/_why-us.pug
+		include ../sections/_cta.pug
+		include ../sections/_benefits.pug
+		include ../sections/_app.pug
+		include ../sections/_how-work.pug
+		include ../sections/_services.pug
+		include ../sections/_partners.pug
+
+
+
+	
+	//====== FOOTER =========
+	include ../sections/_footer.pug
+	
+	
+block variables
+	-var title = "Рабочий легион";

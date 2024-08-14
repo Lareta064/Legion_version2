@@ -1,0 +1,28 @@
+.app{
+	&-content{
+		width: min(1064px, 100%);
+		margin-inline: auto;
+		column-gap: 64px;
+	}
+	.app-content__img{width: 350px;}
+	&-content__img{flex-shrink: 0;}
+	.h2{margin-bottom: 16px;}
+	.reg-20{margin-bottom: 32px; line-height: 1.5;}
+	.mark-list{margin-bottom: 40px;}
+	@media (max-width: 1199px) {
+		column-gap: 32px;
+		.app-content__img {width: 250px;}
+		.apps-wrapper {
+			grid-template-columns: 1fr;
+		}
+			
+	}
+	@media (max-width: 767px) {
+	&-content{flex-direction: column; row-gap:28px;}
+	.mark-list {margin-bottom: 32px;}
+	.h2{font-size: 32px;}
+	
+			
+		
+	}
+}

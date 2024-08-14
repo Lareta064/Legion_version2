@@ -1,0 +1,38 @@
+.btn, input.btn{
+	display: inline-flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	white-space: nowrap;
+	border-radius: 6px;
+	padding-inline: 32px;
+	height: 52px;
+	font-weight: 700;
+	font-size: 16px;
+	color: $ab;
+	font-weight: 700;
+	background-color: $pr;
+	transition: .3s; 
+	border: 0;
+	&:hover{
+		background-color: #ebb300;
+	}
+	&:active{
+		background-color: #ffdb14;
+	}
+}
+.btn.btn--outline{
+	background-color: transparent;
+	color: white;
+	padding-left: 30px;
+	padding-right: 30px;
+	&:hover {
+		background-color: #ebb300;
+		color: $ab;
+	}
+
+	&:active {
+		background-color: #ffdb14;
+		color: $ab;
+	}
+}

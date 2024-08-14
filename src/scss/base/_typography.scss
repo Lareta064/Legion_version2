@@ -1,0 +1,87 @@
+.h1, .h2, .h3, .h4, .h5, .body-700, .cap-700{
+	font-weight: 700;
+	line-height: 1.3;
+	color: $ab;
+}
+.h1{
+	font-size: 52px;
+	@media (max-width: 1439px) {
+		font-size: 44px;
+	}
+	@media (max-width: 1279px) {
+		font-size: 34px;
+	}
+	@media (max-width: 767px) {
+		font-size: 27px;
+	}
+}
+.h2{
+	font-size: 48px;
+	margin-bottom: .5em;
+	@media (max-width: 1439px) {
+		font-size: 38px;
+	}
+	@media (max-width: 1023px) {
+		font-size: 28px;
+	}
+}
+.h3{
+	font-size: 32px;
+	@media (max-width: 1023px) {
+		font-size: 20px;
+	}
+}
+.h4{
+	font-size: 24px;
+	@media (max-width: 1023px) {
+	font-size: 20px;
+	}
+}
+.h5, .reg-20 {
+	font-size: 20px;
+	color: $ab;
+}
+.reg-20, .body{
+	font-weight: 400;
+	line-height: 1.3;
+}
+.reg-20{
+	@media (max-width: 1023px) {
+	font-size: 16px;;
+	}
+}
+.body, .body-700{
+	font-size: 16px;
+	line-height: 1.5;
+}
+.body{
+	font-weight: 400;
+}
+.cap, .cap-700{
+	font-size: 14px;
+	
+	line-height: 1.5;
+}
+.reg-12{
+	font-size: 12px;
+	line-height: 1.5;
+	
+}
+.link{
+	color: $g1;
+	transition: .3s; 
+	&:hover{
+		color: $g2;
+	}
+}
+.txt-pr{
+	color: $pr!important;
+
+}
+.cta-link{
+	color: $pr2;
+	column-gap: 10px;
+	font-weight: 700;
+	line-height: 1.5;
+	svg.svg-right{color: $pr2;}
+}

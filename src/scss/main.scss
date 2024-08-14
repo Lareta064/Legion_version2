@@ -1,0 +1,29 @@
+@import "base/_var";
+@import "base/_base";
+@import "base/_buttons";
+@import "base/_icons";
+@import "base/_typography";
+@import "base/_form";
+
+@import "blocks/_benefit-card";
+@import "blocks/_serv-card";
+@import "blocks/_header-menu";
+@import "blocks/_gamburger";
+@import "blocks/_custom-drop";
+
+
+//sections
+
+ @import "sections/header";
+ @import "sections/hero";
+ @import "sections/about";
+ @import "sections/why-us";
+ @import "sections/cta";
+ @import "sections/benefits";
+ @import "sections/app";
+ @import "sections/how-work";
+ @import "blocks/tabs";
+ @import "sections/services";
+ @import "sections/partners";
+ @import "sections/footer";
+ @import "blocks/modal";

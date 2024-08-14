@@ -1,0 +1,8 @@
+mixin benefit(icon, title, txt)
+	.benefit-card
+		span.fl-icon
+			svg(class="svg-"+icon)
+				use( href='./img/spriteSvg.svg#svg-'+icon)
+		.h4 #{title}
+		p #{txt}
+			

@@ -1,0 +1,54 @@
+header.header
+	.container
+		.header-container.fl-row
+			//=======LOGO =======
+			a(href="#!").logo
+				svg.svg-logo
+					use( href='./img/spriteSvg.svg#logo')
+			
+			//====== gamburger-icon for mobile menu ====
+			button(type="button").menu-toggle#menu-toggle
+				span
+			//======= HEADER CENTER =======
+			.header-content#mobile-menu
+				.main-menu-wrapper
+					//======= TOP ROW =====
+					.header-info.fl-row
+						//====== contacts item ====
+						a(href="tel:88001234567").contact-item
+							svg.svg-phone
+								use( href='./img/spriteSvg.svg#svg-phone')
+							span 8 (800) 123-45-67
+						//====== contacts item ====
+						a(href="mailto:info@yourstaffing.ru").contact-item
+							svg.svg-envelop
+								use( href='./img/spriteSvg.svg#svg-envelop')
+							span info@yourstaffing.ru
+						.fl-row.header-group
+							.fl-row.header-city
+								span.select-label Ваш город:
+								//===== выбор города ====
+								.custom-select-wrapper
+									.custom-select.no-border
+										.custom-select__trigger
+											span Ростов-на-Дону
+											.arrow
+										//===== выпадающий список ====
+										.custom-options
+											span.custom-option.selected(data-value="Ростов-на-Дону") Ростов-на-Дону
+											span.custom-option(data-value="Краснодар") Краснодар
+						
+							//====== button ====
+							.btn-wrapper
+								button(type="button" frame-btn="popup").btn Заказать
+					
+
+					//======== BOTTOM ROW =====
+					.header-nav.fl-row
+						.main-menu
+							nav.menu
+								a(href="#about") О сервисе
+								a(href="#why-us") Преимущества
+								a(href="#services") Услуги
+								a(href="#partners") Партнерам
+								a(href="#how-work") Стать исполнителем

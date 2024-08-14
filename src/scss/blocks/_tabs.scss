@@ -1,0 +1,12 @@
+.tabs-container{
+	
+	@media (max-width: 1023px) {
+		.tab-content {
+			display: none;
+		}
+		
+		.tab-content.active {
+			display: block;
+		}
+	}
+}

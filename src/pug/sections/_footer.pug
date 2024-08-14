@@ -1,0 +1,121 @@
+footer.footer
+	.container
+		.footer-content
+			//=======LOGO =======
+			a(href="#!").logo
+				svg.svg-logo
+					use( href='./img/spriteSvg.svg#logo')
+			//=== single block ====
+			.footer-column
+				//===== выбор города ====
+				.custom-select-wrapper
+					.custom-select.no-border
+						.custom-select__trigger
+							span Москва
+							.arrow
+						//===== выпадающий список ====
+						.custom-options
+							span.custom-option.selected(data-value="Москва") Москва
+							span.custom-option(data-value="Саратов") Саратов
+							span.custom-option(data-value="Ростов") Ростов
+							span.custom-option(data-value="Санкт-Петербург") Санкт-Петербург
+				nav.footer-menu
+					a(href="#!") Пользовательское соглашение
+					a(href="#!") Соглашение на обработку персональных данных
+					a(href="#!") Политика конфиденциальности
+					a(href="#!") Публичная оферта
+
+			//=== single block ====
+			.footer-column
+				nav.footer-menu
+					a(href="#!") Создать заказ
+					a(href="#!") Как стать партнером
+					a(href="#!") Как стать исполнителем
+					a(href="#!") О сервисе
+
+			//=== single block ====
+			.footer-column.footer-column--info
+				p ИП Терентьев Константин Генадьевич
+				p ИНН: 893218834823888283
+				a(href="tel:+71234567899").contact-link +7 123 456 78 99
+				a(href="mailto:info@mail.ru").contact-link info@mail.ru
+
+//===============MODAL ==============
+.modal-frame-wrapper(frame-modal="popup")
+	.modal-frame
+		.icon-close(frame-close)
+		.modal-frame__body
+			.modal-frame__img
+				img(src="./img/form-bg.webp", alt="img")
+			
+			.modal-form
+				.h2 Оформление заказа
+				form.feedback-form(action="" method="method")
+					.form-wrapper
+						//==== колонка с полями ===
+						.form-wrapper__col
+							//===== имя ===
+							.form-item
+								.label-txt.visible-desktop Текст на кириллице
+								input.form-input(type="text" name="")
+								p.fake-placeholder Ведите имя #[span *]
+							//===== телефон ===
+							.form-item
+								input.form-input(type="text" name="")
+								p.fake-placeholder Ведите телефон #[span *]
+								p.error This is for error messages
+							//====INPUTS GROUP ===
+							.form-row.fl-row
+								//===== календарь ===
+								.form-item.form-item--datapicker
+									svg.svg-calend
+										use( href='./img/spriteSvg.svg#svg-calend')
+									.mydatepicker#datepicker
+										input.form-input(type="text" class="datepicker" )
+										p.fake-placeholder Выберите дату #[span *]
+								
+								//===== время ===
+								.form-item
+									input.form-input.timepicker(type="text" name="timepicker")
+									p#fake.fake-placeholder Укажите время #[span *]
+							
+							
+							//===== адрес ===
+							.form-item.mt-16
+								.label-txt г. Ростов-на -Дону
+								input.form-input(type="text" name="")
+								p.fake-placeholder Ведите адрес без города #[span *]
+						
+						//==== колонка с полями ===
+						.form-wrapper__col
+							//===== Продолжительность  ===
+							.form-item.mt-16--mobile
+								.label-txt Число или диапазон
+								input.form-input(type="text" name="")
+								p.fake-placeholder Продолжительность работы #[span *]
+								p.error This is for error messages
+							//===== Сколько рабочих ===
+							.form-item
+								input.form-input(type="text" name="")
+								p.fake-placeholder Сколько рабочих нужно? #[span *]
+							
+							//===== Message ===
+							.form-item
+								textarea.form-input
+								p.fake-placeholder Опишите, что нужно сделать #[span *]
+					button(type="submit").btn.w-100 Оформить заказ
+
+
+//===============MODAL ==============
+.modal-frame-wrapper.success-popup(frame-modal="success")
+	.modal-frame
+		.icon-close(frame-close)
+		.modal-frame__body
+			.success-icon
+				svg.big-check
+					use( href='./img/spriteSvg.svg#big-check')
+			.h3 Заявка успешно отправлена
+			p Наш менеджер свяжется с вами в&nbsp;ближайшее время
+			button(frame-close).btn Хорошо
+				
+			

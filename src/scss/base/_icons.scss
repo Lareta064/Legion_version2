@@ -1,0 +1,100 @@
+*[class^="icon-"] {
+	display: inline-block;
+	color: #333333;
+	width: 24px;
+	height: 24px;
+}
+svg {
+	display: inline-block;
+	color: #333333;
+}
+svg.svg-logo{
+	color: black;
+}
+svg.svg-phone{
+	width: 18px;
+	height: 18px;
+}
+svg.svg-cross {
+	width: 14px;
+	height: 14px;
+}
+svg.svg-envelop {
+	width: 20px;
+	height: 16px;
+}
+svg.svg-left, svg.svg-right{
+	width: 8px;
+	height: 12px;
+}
+svg.svg-right{transform: rotate(180deg);}
+svg.svg-user{
+	color: #0E0E0E;
+	width: 27px;
+	height: 26px;
+}
+svg.svg-settings, svg.svg-del, svg.svg-chat{
+	color: #0E0E0E;
+	width: 18px;
+	height: 20px;
+}
+svg.svg-rev{
+	color: #0E0E0E;
+	width: 20px;
+	height: 19px;
+}
+svg.svg-crow{
+	color: #1C1B1F;
+	width: 20px;
+	height: 16px;
+}
+svg.svg-globus{
+	width: 21px;
+	height: 21px;
+	color: #0E0E0E;
+}
+svg.svg-screen{
+	width: 17px;
+	height: 22px;
+	color: #0E0E0E;
+}
+svg.svg-calend{
+	width: 18px;
+	height: 20px;
+	color: #1C1B1F;
+}
+svg.svg-tg{
+	width: 24px;
+	height: 24px;
+	color: #0E0E0E;
+}
+svg.svg-check{
+	color: #EB5757;
+	width: 20px;
+	height: 15px;
+}
+svg.svg-danger{
+color:#DB371F;
+width: 16px;
+height: 16px;
+}
+svg.svg-house{
+	color: #FFC700;
+	width: 30px;
+	height: 30px;
+}
+svg.svg-person{
+	color: #FFC700;
+	width: 28px;
+	height: 26px;
+}
+.fl-icon{
+	width: 56px;
+	height: 56px;
+	border-radius: 8px;
+	background-color: $pr;
+}
+svg.big-check{
+	width: 112px;
+	height:83px;
+}

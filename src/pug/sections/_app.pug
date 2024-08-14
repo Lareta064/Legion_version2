@@ -1,0 +1,52 @@
+//======= APP ========
+section.app.bg-light
+	.container
+		.app-content.fl-row
+			//======= IMAGE ======
+			.app-content__img
+				img(src="./img/mockup2.webp", width="350" alt="alt")
+			//======RIGHT COLUMN =======
+			.app-content__txt
+				h2.h2 В приложении удобнее
+				p.reg-20 Установите мобильное приложение «Рабочий легион» на свой телефон и находите лучших исполнителей для любых задач, а также получите:
+				//======LIST ======
+				ul.mark-list
+					li Скидку -10% при оформлении первого заказа
+					li Квалифицированных специалистов от 350 р в час
+					li Накопительные бонусы от каждого следующего заказа
+					
+				//======== БЛОК С СЫЛКАМИ =====
+				.apps-wrapper
+					//====== БОТ БЛОК =====
+					.bot-block
+						h4.cap-700 Для перехода к чат-боту – выберите город
+						//===== выбор города ====
+						.custom-select-wrapper
+							.custom-select
+								.custom-select__trigger
+									span Москва #[sup *]
+									.arrow
+								//===== выпадающий список ====
+								.custom-options
+									span.custom-option.selected(data-value="Москва") Москва
+									span.custom-option(data-value="Саратов") Саратов
+									span.custom-option(data-value="Ростов") Ростов
+									span.custom-option(data-value="Санкт-Петербург") Санкт-Петербург
+						
+						//===== ссылка телеграм =====
+						a(href="#!").btn.w-100 Открыть бота в Telegram
+					
+					//======ПРИЛОЖЕНИЯ =====
+					.app-block
+						h4.cap-700 Установить приложение
+						.fl-row
+							//====qr  код =====
+							.qrcode-img
+								img(src="./img/qrcode.svg", width="111" alt="img")
+							
+							//====app links  =====
+							.app-links
+								a(href="#!").app-link
+									img(src="./img/google-play.svg", alt="")
+								a(href="#!").app-link
+									img(src="./img/app-store.svg", alt="")

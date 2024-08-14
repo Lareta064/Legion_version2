@@ -1,0 +1,94 @@
+//======как мы работаем ======
+section.how-working#how-work
+	.container
+		h2.h2 Как мы работаем?
+		.tabs-container
+			//========кнопки переключатели для моб версии ====
+			.tabs-btns
+				button(type="button" data-tab-target="#one").btn.tab.active Сайт
+				button(type="button" data-tab-target="#two").btn.tab Приложение
+				button(type="button" data-tab-target="#three").btn.tab Телеграмм-бот
+			
+			//===== контент в три колонки ======
+			.how-working-content
+				//======= single card =====
+				.serv-list.serv-list--card.tab-content.active#one
+					.fl-icon.bg-dark
+						svg.svg-globus
+							use( href='./img/spriteSvg.svg#svg-globus')
+					.h3  Через сайт
+					//======= num-list ====
+					ul.num-list
+						li Заполните заявку на сайте
+						li Дождитесь звонка менеджера
+						li Подтвердите информацию
+						li Осуществите предоплату
+						li Подождите, пока мы найдем вам свободного исполнителя
+						li Подтвердите выполнение работы
+						li Получите акты выполненных работ и другие документы
+					//======= button ====
+					button(type="button").btn Оставить заявку
+				
+				//======= single card =====
+				.serv-list.serv-list--card.tab-content#two
+					.fl-icon.bg-dark
+						svg.svg-screen
+							use( href='./img/spriteSvg.svg#svg-screen')
+					.h3  Через приложение
+					//======= num-list ====
+					ul.num-list
+						li Установите приложение
+						li Заполните форму поиска
+						li Дождитесь звонка менеджера
+						li Выполните предоплату
+						li Дождитесь подбора рабочего
+						li Следите за выполнением поставленных задач
+						li Подтвердите выполнение работ
+						li Получите акты выполненных работ и другие документы
+					//======= button ====
+					button(type="button").btn Установить приложение
+
+				//======= single card =====
+				.serv-list.serv-list--card.tab-content#three
+					.fl-icon.bg-dark
+						svg.svg-tg
+							use( href='./img/spriteSvg.svg#svg-tg')
+					.h3  Через телеграмм-бот
+					//======= num-list ====
+					ul.num-list
+						li Перейдите в чат в Телеграмм
+						li Заполните форму поиска
+						li Дождитесь звонка менеджера
+						li Осуществите предоплату
+						li Дождитесь подбора рабочего
+						li Отлеживайте выполнение работы
+						li Подтвердите выполнение работ
+						li Получите акты выполненных работ и другие документы
+					
+					//======= city select ====
+					.bot-block
+						h4.cap-700 Для перехода к чат-боту – выберите город
+						//===== выбор города ====
+						.custom-select-wrapper
+							.custom-select
+								.custom-select__trigger
+									span Москва #[sup *]
+									.arrow
+								//===== выпадающий список ====
+								.custom-options
+									span.custom-option.selected(data-value="Москва") Москва
+									span.custom-option(data-value="Саратов") Саратов
+									span.custom-option(data-value="Ростов") Ростов
+									span.custom-option(data-value="Санкт-Петербург") Санкт-Петербург
+									span.custom-option.selected(data-value="Москва") Москва
+									span.custom-option(data-value="Саратов") Саратов
+									span.custom-option(data-value="Ростов") Ростов
+									span.custom-option(data-value="Санкт-Петербург") Санкт-Петербург
+									span.custom-option.selected(data-value="Москва") Москва
+									span.custom-option(data-value="Саратов") Саратов
+									span.custom-option(data-value="Ростов") Ростов
+									span.custom-option(data-value="Санкт-Петербург") Санкт-Петербург
+					//======= button ====
+					button(type="button").btn.w-100 Открыть бота в Telegram
+
+				

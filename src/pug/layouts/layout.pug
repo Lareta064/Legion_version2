@@ -1,0 +1,52 @@
+include ../mixins/mixins.pug
+block variables
+
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		
+		//- link(rel="stylesheet", href="fonts/icons.css")
+		
+		//======= кастомный плагин выбра даты в инпуте =============
+		link(rel="stylesheet" href="./libs/ui-timepicker/timepicker.css" )
+		link(rel="stylesheet" href="./libs/ui-datapicker/ui-datapicker.css" )
+		//======= main styles =============
+		link(rel="stylesheet", href="css/main.css")
+
+		style.
+
+			@font-face{
+				font-family: 'Roboto';
+				src: url(./fonts/Roboto-Regular.woff2) format("woff2");
+				font-weight: 400;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face{
+				font-family: 'Roboto';
+				src: url(./fonts/Roboto-Bold.woff2) format("woff2");
+				font-weight: 700;
+				font-style: normal;
+				font-display: swap;
+			}
+			
+		title !{title}
+		
+	body
+		
+		block content
+		
+		//=============== jquery ===================
+		script(src="./libs/jquery/jquery-3.0.0.min.js")
+		
+		//======= кастомный плагин выбра даты в инпуте =============
+		script(src="./libs/ui-datapicker/ui-datapicker.js")
+		script(src="./libs/ui-timepicker/timepicker.js")
+		//=============== мои скрипты ===================	
+		script(src="js/main.js")
