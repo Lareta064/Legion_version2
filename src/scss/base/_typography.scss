@@ -23,9 +23,15 @@
 	}
 	@media (max-width: 1023px) {
 		font-size: 28px;
-		margin-bottom: 40px;
+		margin-bottom: 32px;
 	}
 	
+}
+.h2.h2--special{
+	@media (max-width: 1023px) {
+		font-size: 32px;
+		margin-bottom: 32px;
+	}
 }
 .h3{
 	font-size: 32px;

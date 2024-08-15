@@ -1,0 +1,45 @@
+.price{
+	color: white;
+	.h2 {color: white }
+	background-image: url('../img/v2/price.webp');
+	@media (max-width: 767px) {
+	background-image: url('../img/v2/price-mob.webp');
+	background-position: top;
+	background-size: contain;
+	}
+}
+.price-cards{
+	display: flex; column-gap:30px; justify-content: center;
+	@media (max-width: 1023px) {
+	width: calc(50% + 50vw);
+	overflow: hidden;
+	overflow-x: auto;
+	column-gap: 0;
+	justify-content: flex-start;
+	scrollbar-width: none;
+	&::-webkit-scrollbar{display: none;}
+	}
+}
+.price-card{
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	padding: 40px 32px;
+	flex-shrink: 0;
+	border-radius: 16px;
+	max-width: 520px;
+	.btn, .h5,.h2 {flex-shrink: 0;}
+	.h4{color: $g2;}
+	.h2{margin-bottom: 32px; color: $ab;}
+	ul{
+		margin-bottom: 48px;
+		flex-grow: 1;
+	}
+	@media (max-width: 767px) {
+	width: 317px;
+	margin-right: 12px;
+	padding: 32px 16px;
+	.h2{margin-bottom: 16px; font-size: 32px;}
+	ul{margin-bottom: 32px;}
+	}
+}

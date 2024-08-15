@@ -23,8 +23,13 @@
 		position: relative;
 		z-index: 5;
 		max-width: 630px;
+		margin-left: auto;
+		
 		.h5{color: white;margin-bottom: 12px;}
 		.body{color: $g3; min-height: 102px;}
+		@media (max-width: 767px) {
+		margin-left: 0;
+		}
 	}
 	@media (max-width: 1023px) {
 		height: 480px;
@@ -38,7 +43,11 @@
 	padding: 24px 16px;
 	}
 }
+
 .serv-card:nth-child(2n){
 	text-align: left;
+	.serv-card__text {margin-left: 0;}
+			
+			
 	
 }

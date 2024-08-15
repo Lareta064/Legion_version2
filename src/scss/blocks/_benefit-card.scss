@@ -1,9 +1,9 @@
 .benefit-card{
-	width: min(519px, 100%);
-	.h4,.fl-icon{
+	width: min(630px, 100%);
+	.h3,.fl-icon{
 		margin-bottom: 16px;
 	}
 	@media (max-width: 767px) {
-		.h4{margin-bottom: 8px;}
+		.h3{margin-bottom: 8px; }
 	}
 }

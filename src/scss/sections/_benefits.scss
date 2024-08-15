@@ -1,13 +1,13 @@
 .benefits{
 	&-content{
 		display: grid;
-		grid-template-columns: repeat(2, 519px);
-		column-gap: 80px;
-		row-gap: 56px;
+		grid-template-columns: repeat(2, 630px);
+		column-gap: 30px;
+		row-gap: 32px;
 	}
-	.h2{margin-bottom: 80px;}
+	
 	@media (max-width: 1439px) {
-		.h2 {margin-bottom: 56px;}
+		
 		&-content{ column-gap: 56px;}
 			
 		
@@ -16,7 +16,7 @@
 		&-content{grid-template-columns: repeat(2, 1fr);}
 	}
 	@media (max-width: 767px) {
-	.h2 {margin-bottom: 32px;}
+	
 	&-content{
 		grid-template-columns: 1fr;
 		row-gap: 24px;

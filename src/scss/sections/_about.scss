@@ -7,7 +7,7 @@
 		justify-content: space-between;
 		@media (max-width: 1199px) {
 			flex-direction: column-reverse;
-			row-gap:24px;
+			// row-gap:24px;
 			&>*{width: 100%;}
 		}
 	}
@@ -62,8 +62,19 @@
 			width: 48%;
 		}
 		@media (max-width: 1199px) {
-		padding: 30px;
+			padding: 30px;
 		}
+		@media (max-width: 767px) {
+			padding: 30px 16px 20px;
+		}
+	}
+	@media (max-width: 1199px) {
+	padding-top: 124px;
+	}
+	@media (max-width: 767px) {
+	padding-top: 80px;
+	.h2{margin-bottom: 0;}
+		.about__txt p{margin-block:10px;}
 	}
 
 }

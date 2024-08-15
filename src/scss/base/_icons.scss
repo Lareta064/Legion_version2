@@ -89,11 +89,15 @@ svg.svg-person{
 	height: 26px;
 }
 .fl-icon{
-	width: 56px;
-	height: 56px;
+	width: 80px;
+	height: 80px;
 	border-radius: 8px;
 	background-color: $pr;
 	flex-shrink: 0;
+	@media (max-width: 1199px) {
+		width: 64px;
+		height: 64px;
+	}
 }
 svg.big-check{
 	width: 112px;
