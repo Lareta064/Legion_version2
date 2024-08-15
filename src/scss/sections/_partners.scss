@@ -1,60 +1,63 @@
 .partners{
-	padding-bottom: 124px;
+	padding-block:124px;
 	position: relative;
-	background: linear-gradient(-90deg, rgba(0, 0, 0, 0) 0%, #000 80%), url("../img/partner-bg.webp");
-	
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: right;
-	.partners-mobile-bg{
-		display: none;
+	// background-image: url('../img/v2/light-bg.webp');
+	&:after{
+		content: '';
+		inset:0;
+		background: rgba(255, 255, 255, 0.25) url("../img/v2/light-bg.webp");
+		mix-blend-mode: hard-light;
+		opacity: 0.55;
+		position: absolute;
 	}
-	@media (max-width: 1439px) {
-		padding-bottom: 88px;
+	&-card-wrapper{
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		gap: 30px 40px;
+		position: relative;
+		z-index: 2;
+		@media (max-width: 1023px) {
+		 gap: 16px 32px;
+		}
+		@media (max-width: 767px) {
+			display: flex;
+			gap:0;
+			width: calc(50% + 50vw);
+			overflow: hidden;
+			overflow-x: auto;
+			scrollbar-width: none;
+			&::-webkit-scrollbar{
+				display: none;
+			}
+		}
+	}
+	&-card{
+		grid-column: span 6;
+		@media (max-width: 767px) {
+			width: 327px;
+			flex-shrink: 0;
+			margin-right: 16px;
+		}
+				
+			
+		
+	}
+	&-card__img{
+		border-radius: 16px;
+		overflow: hidden;
+		margin-bottom: 16px;
+		aspect-ratio: 63/32;
+		overflow: hidden;
+		img{
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			
+		}
 	}
 	@media (max-width: 767px) {
-		padding-bottom: 56px;
-		background: #000;
-		padding-top: 314px;
-		.partners-mobile-bg {
-			display: block;
-			height: 433px;
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%), url("../img/partner-bg-mob.webp");
-		}
-		&-content{
-			position: relative;
-			z-index: 3;
-			width: 100%;
-			.h2 {
-				margin-bottom: 8px;
-				font-size: 32px;
-			}
-		
-			.h5 {
-				margin-bottom: 24px;
-			}
-		
-			.btn {
-				margin-top: 32px;
-				width: 192px;
-			}
-		}
+		padding-block: 56px;
+	  .h2.txt-center{text-align: left;}
+		&-card__img {aspect-ratio: 327/320;}
 	}
-	&-content{
-		width: 80%;
-		max-width: 560px;
-		*:not( .btn){color: $g3;}
-	}
-	.h2{
-		margin-bottom: 16px;
-	}
-	.h5{
-		margin-bottom: 32px;
-	}
-	.mark-list{margin-block: 24px;}
-	.btn{margin-top: 40px;}
 }

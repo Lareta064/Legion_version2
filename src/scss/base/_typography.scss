@@ -17,12 +17,15 @@
 }
 .h2{
 	font-size: 48px;
-	margin-bottom: .5em;
+	margin-bottom: 56px;
 	@media (max-width: 1439px) {
 		font-size: 38px;
 	}
 	@media (max-width: 1023px) {
 		font-size: 28px;
+	}
+	@media (max-width: 767px) {
+	margin-bottom: 24px;
 	}
 }
 .h3{
@@ -74,10 +77,12 @@
 		color: $g2;
 	}
 }
-.txt-pr{
-	color: $pr!important;
+.txt-pr{color: $pr!important;}
+.txt-pr2 {color: $pr2 !important;}
+.txt-center{text-align: center;}	
 
-}
+
+
 .cta-link{
 	color: $pr2;
 	column-gap: 10px;

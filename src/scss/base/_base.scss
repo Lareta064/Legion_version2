@@ -104,6 +104,25 @@ select:-webkit-autofill:focus {
    
   }
 }
+.container-large{
+  width: min(1824px, 100%);
+  @media (max-width: 1919px) {
+  width: 100%;
+    padding-inline:48px;
+  }
+  @media (max-width: 1364px) {
+    padding-inline: 50px;
+  }
+
+  @media (max-width: 1023px) {
+    padding-inline: 30px;
+  }
+
+  @media (max-width: 767px) {
+    padding-inline: 20px;
+
+  }
+}
 section + section{
   padding-top: 124px;
  

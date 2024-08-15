@@ -1,27 +1,14 @@
 .why-us{
 	@media (max-width: 767px) {
-	.h2{
-		max-width: 285px;
-		margin-bottom: 0;
-	}
-	}
+		.h2{text-align: left!important;}}
 }
 .serv-card-wrapper{
-	padding-top: 124px;
-	border-top: 1px solid $g3;
-	.serv-card:not(:first-child){margin-top: 40px;}
-	@media(max-width:1439px){
-		padding-top: 64px;
-	}
-	@media (max-width: 1199px) {
-		padding-top: 48px;
-		.serv-card:not(:first-child) {
-				margin-top: 30px;
-			}
-	}
-	@media (max-width: 767px) {
-	   border-top: 0;
-		padding-top: 18px;
-		
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	border-radius: 24px;
+	overflow: hidden;
+	@media (max-width: 1023px) {
+		border-radius: 0;
+	row-gap:10px;
 	}
 }
