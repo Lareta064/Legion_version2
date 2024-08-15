@@ -93,6 +93,7 @@ svg.svg-person{
 	height: 56px;
 	border-radius: 8px;
 	background-color: $pr;
+	flex-shrink: 0;
 }
 svg.big-check{
 	width: 112px;

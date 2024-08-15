@@ -1,0 +1,109 @@
+.cooperation .container{
+	@media (max-width: 1439px) {
+		padding-inline:16px;
+	}
+	
+}
+.cooperation-list{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: center;
+	align-items: center;
+	column-gap:calc(100% - 700px);
+	.benefit-card{
+		width: 350px;
+		flex-shrink: 0;
+		display: flex;
+		flex-direction: column;
+		padding-block:40px;
+		
+	}
+	.benefit-card-head{
+		margin-bottom: 12px;
+		.h4{margin-bottom: 0;}
+		.fl-icon{
+			font-weight: 700;
+			font-size: 24px;
+			margin-bottom: 16px;
+		}
+		
+	}
+	.benefit-card:nth-child(1),.benefit-card:nth-child(2){
+		border-bottom: 1px solid $g3;
+	}
+	.benefit-card:nth-child(2n) {padding-left: 50px;}
+	.benefit-card:nth-child(2n+1){
+		text-align: right;
+		align-items: flex-end;
+		padding-right: 50px;
+		.fl-icon{margin-left: auto;
+		}
+	}
+	@media (max-width: 1439px) {justify-content: space-between;}
+	@media (max-width: 1199px) {
+		column-gap: 4%;
+		align-items: flex-start;
+		.benefit-card{width: 48%;}
+		.benefit-card:nth-child(2n){padding-left: 0;}
+		.benefit-card:nth-child(2n+1){padding-right: 0;}
+		
+	}
+	@media (max-width: 767px) {
+		flex-direction: column;
+		row-gap:48px;
+		.benefit-card{
+			padding: 0!important;
+			width: 100%;
+		}
+		.benefit-card-head{
+			display: flex;
+			column-gap:16px;
+			padding-bottom: 16px;
+			border-bottom: 1px solid $g3;
+			margin-bottom: 16px;
+			.fl-icon{margin-bottom: 0;}
+
+		}
+		.benefit-card:nth-child(2n+1) {
+			text-align: left;
+			align-items: flex-start;
+			padding-right:0;
+
+			.fl-icon {
+				margin-left: 0;
+			}
+		}
+		.benefit-card:nth-child(1),
+		.benefit-card:nth-child(2) {
+			border-bottom:0;
+		}
+	}
+		
+		
+	
+}
+.cooperation-grid{
+	position: relative;
+	.cooperation-banner{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 588px;
+		img{
+			width: 100%;
+			aspect-ratio:147/ 160;
+			border-radius: 24px;
+		}
+		@media (max-width: 1439px) {
+			width: calc(100% - 700px);
+			img{
+				height: 100%;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+		@media (max-width: 1199px) { display: none;}
+	}
+}
