@@ -88,6 +88,19 @@ svg.svg-person{
 	width: 28px;
 	height: 26px;
 }
+.svg-ic1,
+.svg-ic2,
+.svg-ic3,
+.svg-ic4,
+.svg-ic5,
+.svg-ic6{
+	width: 64px;
+	height: 64px;
+	@media (max-width: 767px) {
+	width: 48px;
+	height: 48px;
+	}
+}
 .fl-icon{
 	width: 80px;
 	height: 80px;
