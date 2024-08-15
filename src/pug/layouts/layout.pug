@@ -10,12 +10,9 @@ html(lang="ru")
 		
 		//====убрать синий цвет у ссылок в сафари ========
 		meta(name="format-detection" content="telephone=no")
+		//======= aos =============
+		link(rel="stylesheet" href="./libs/aos/aos.css" )
 		
-		//- link(rel="stylesheet", href="fonts/icons.css")
-		
-		//======= кастомный плагин выбра даты в инпуте =============
-		link(rel="stylesheet" href="./libs/ui-timepicker/timepicker.css" )
-		link(rel="stylesheet" href="./libs/ui-datapicker/ui-datapicker.css" )
 		//======= main styles =============
 		link(rel="stylesheet", href="css/main.css")
 
@@ -45,8 +42,14 @@ html(lang="ru")
 		//=============== jquery ===================
 		script(src="./libs/jquery/jquery-3.0.0.min.js")
 		
-		//======= кастомный плагин выбра даты в инпуте =============
-		script(src="./libs/ui-datapicker/ui-datapicker.js")
-		script(src="./libs/ui-timepicker/timepicker.js")
+		//=======aos =============
+		script(src="./libs/aos/aos.js")
+		script.
+			AOS.init({
+				 duration: 600,
+				  disable: 'mobile',
+				  once: true
+			});
+
 		//=============== мои скрипты ===================	
 		script(src="js/main.js")
