@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!--====убрать синий цвет у ссылок в сафари ========-->
+		<meta name="format-detection" content="telephone=no">
+		<!--======= aos =============-->
+		<link rel="stylesheet" href="./libs/aos/aos.css">
+		<!--======= main styles =============-->
+		<link rel="stylesheet" href="css/main.css">
+		<style>
+			@font-face{
+				font-family: 'Roboto';
+				src: url(./fonts/Roboto-Regular.woff2) format("woff2");
+				font-weight: 400;
+				font-style: normal;
+				font-display: swap;
+			}
+			@font-face{
+				font-family: 'Roboto';
+				src: url(./fonts/Roboto-Bold.woff2) format("woff2");
+				font-weight: 700;
+				font-style: normal;
+				font-display: swap;
+			}
+			
+		</style>
+		<title>Рабочий легион</title>
+	</head>
+	<body>
+		<!--====== HEADER=========-->
+		<header class="header">
+			<div class="container">
+				<div class="header-container fl-row">
+					<!--=======LOGO =======--><a class="logo" href="#!">
+						<svg class="svg-logo">
+							<use href="./img/spriteSvg.svg#logo"></use>
+						</svg></a>
+					<!--====== gamburger-icon for mobile menu ====-->
+					<button class="menu-toggle" type="button" id="menu-toggle"><span></span></button>
+					<!--======= HEADER CENTER =======-->
+					<div class="header-content" id="mobile-menu">
+						<div class="main-menu-wrapper">
+							<!--======= TOP ROW =====-->
+							<div class="header-info fl-row">
+								<!--====== contacts item ====--><a class="contact-item" href="tel:88001234567">
+									<svg class="svg-phone">
+										<use href="./img/spriteSvg.svg#svg-phone"></use>
+									</svg><span>8 (800) 123-45-67</span></a>
+								<!--====== contacts item ====--><a class="contact-item" href="mailto:info@yourstaffing.ru">
+									<svg class="svg-envelop">
+										<use href="./img/spriteSvg.svg#svg-envelop"></use>
+									</svg><span>info@yourstaffing.ru</span></a>
+								<div class="fl-row header-group">
+									<div class="fl-row header-city"><span class="select-label">Ваш город:</span>
+										<!--===== выбор города ====-->
+										<div class="custom-select-wrapper">
+											<div class="custom-select no-border">
+												<div class="custom-select__trigger"><span>Ростов-на-Дону</span>
+													<div class="arrow"></div>
+												</div>
+												<!--===== выпадающий список ====-->
+												<div class="custom-options"><span class="custom-option selected" data-value="Ростов-на-Дону">Ростов-на-Дону</span><span class="custom-option" data-value="Краснодар">Краснодар</span></div>
+											</div>
+										</div>
+									</div>
+									<!--====== button ====-->
+									<div class="btn-wrapper">
+										<button class="btn" type="button" frame-btn="popup">Заказать</button>
+									</div>
+								</div>
+							</div>
+							<!--======== BOTTOM ROW =====-->
+							<div class="header-nav fl-row">
+								<div class="main-menu">
+									<nav class="menu"><a href="#about">О сервисе</a><a href="#why-us">Преимущества</a><a href="#services">Услуги</a><a href="#price">Тарифы</a><a href="#partners">Стать партнером</a></nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!--======MAIN =========-->
+		<main class="main">
+			<!--==========SECTION HERO ======-->
+			<section class="hero">
+				<!--===image===-->
+				<div class="hero-content-img"></div>
+				<div class="container">
+					<div class="hero-content">
+						<h1 class="h1"> <span class="txt-pr">«Рабочий легион»</span> — автоматизация процессов управления внештатным персоналом для бизнеса!</h1>
+						<!--======  mark-list =======-->
+						<ul class="mark-list">
+							<li>Быстрый и эффективный подбор временных сотрудников.</li>
+							<li>Оптимизация управления персоналом</li>
+							<li>Обучение и поддержка на любом этапе партнерства</li>
+							<li>Выгодное посредничество между заказчиками и исполнителями</li>
+						</ul>
+						<div class="buttons-group"><a class="btn" href="#!" frame-btn="popup">Присоедениться</a></div>
+					</div>
+				</div>
+				<div class="header-benefits" data-aos="fade-up">
+					<div class="container">
+						<div class="fl-center">
+							<!--====single item ===-->
+							<div class="header-benefits-item">
+								<div class="h3">В одном месте</div>
+								<div class="reg-20">Единая платформа для удаленного управления самозанятыми</div>
+							</div>
+							<!--====single item ===-->
+							<div class="header-benefits-item">
+								<div class="h3">5 дней</div>
+								<div class="reg-20">От запуска и настройки до первого сотрудничества</div>
+							</div>
+							<!--====single item ===-->
+							<div class="header-benefits-item">
+								<div class="h3">-40%</div>
+								<div class="reg-20">Снижение затрат на пенсионный, медицинский, страховой фонды</div>
+							</div>
+						</div>
+						<!--==== кнопка для моб версии =====--><a class="btn w-100" href="#!" frame-btn="popup">Присоедениться</a>
+					</div>
+				</div>
+			</section>
+			<!--============= О СЕРВИСЕ ==============-->
+			<section class="about" id="about">
+				<div class="container">
+					<div class="about-content">
+						<!--============= ТЕКСТ ==============-->
+						<div class="about__txt">
+							<h2 class="h2">О сервисе</h2>
+							<p>«Рабочий Легион» - простой, но эффективный инструмент для бизнеса, который нуждается в регулярном найме рабочего персонала: мы предлагаем доступ к автоматизированной цифровой платформе, где собраны тысячи самозанятых, уже сегодня готовых к сотрудничеству.</p>
+							<p>«Рабочий Легион» будет полезен и компании, и начинающему предпринимателю, ведь поможет начать работу с минимальным количеством специалистов на аутсорсинге. Мы не просто найдем рабочих, а сделаем доступной автоматизированную платформу, где вы сами сможете подобрать персонал для выполнения работ, следить за выполнением поставленных задач, выставлять оценки, формировать рейтинг исполнителей, а также собирать заявки от клиентов.</p>
+							<p>При этом, рутинные процессы теперь будут занимать меньше времени и сил: наши эксперты расскажут, как оптимизировать процессы отчетности, снизить затраты в фонд оплаты труда, минимизировать налоговые риски, а также повысить эффективность коммуникации с временными рабочими.</p>
+							<p>Прозрачную систему работы с самозанятыми «Рабочий легион» уже выбрали более 100 компаний в 50 регионах страны. Ее с успехом используют и частные лица, и посредники в сфере подбора персонала. Хотите убедиться, что это выгодно? Присоединяйтесь к нашей команде и оцените работу платформы прямо сейчас!</p>
+							<div class="buttons-group"><a class="btn" href="#!" frame-btn="popup">Стать партнером</a><a class="btn btn--outline txt-dark" href="#!">Просмотреть сайт для клиентов</a></div>
+						</div>
+						<!--============= ИЗОБРАЖЕНИЕ ==============-->
+						<div class="about__img" data-aos="zoom-in"><img src="./img/v2/logo-big.svg" width="554" height="508" alt="img"></div>
+					</div>
+				</div>
+			</section>
+			<!--=========ОТЛИЧНЫЙ ВЫБОР ========-->
+			<section class="why-us pb-124" id="why-us">
+				<div class="container container-large">
+					<h2 class="h2 txt-center"><span class="txt-pr2">«Рабочий легион»</span> —  оптимальное решение, если вы</h2>
+					<!--======== БЛОК С КАРТОЧКАМИ =========-->
+					<div class="serv-card-wrapper" data-aos="fade-up">
+						<!--======== SINGLE CARD =========-->
+						<div class="serv-card" style="background-image: url('./img/v2/picture1.webp')">
+							<div class="serv-card__text">
+								<div class="h5">Регулярно нуждаетесь в подборе разнорабочих</div>
+								<p class="body">Рабочий легион – платформа, где всегда найдутся сотрудники самых разных специальностей.  Вы без проблем сможете найти бригаду на сегодня или завтра, при чем это будут специалисты с хорошим рейтингом и положительными отзывами</p>
+							</div>
+						</div>
+						<!--======== SINGLE CARD =========-->
+						<div class="serv-card" style="background-image: url('./img/v2/picture2.webp')">
+							<div class="serv-card__text">
+								<div class="h5">Цените долгосрочное сотрудничество</div>
+								<p class="body">Мы предлагаем доступ с ежемесячной оплатой и ценим каждого клиента – предоставляем личного консультанта, проводим обучение, рассказываем, как использовать возможности платформы максимально эффективно, при этом экономить</p>
+							</div>
+						</div>
+						<!--======== SINGLE CARD =========-->
+						<div class="serv-card" style="background-image: url('./img/v2/picture3.webp')">
+							<div class="serv-card__text">
+								<div class="h5">Работаете официально</div>
+								<p class="body">Не нарушаете нормы законодательства, при этом не планируете официально трудоустраивать внештатных сотрудников. Выбираете работать «сдельно» и оплачивать выполненную работу по факту? В этой ситуации наша цифровая платформа будет оптимальным решением!</p>
+							</div>
+						</div>
+						<!--======== SINGLE CARD =========-->
+						<div class="serv-card" style="background-image: url('./img/v2/picture4.webp')">
+							<div class="serv-card__text">
+								<div class="h5">Приветствуете автоматизацию рутинных задач и процессов</div>
+								<p class="body">Наша система упрощает оформление договоров, выплату зарплат, решение бухгалтерских и юридических вопросов, а также значительно экономит время и ресурсы на поиск и отбор подходящих исполнителей</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--==========PARTNERS ========-->
+			<section class="partners pb-124" id="partners">
+				<div class="container">
+					<h2 class="h2 txt-center"><span class="txt-pr2">«Рабочий легион»</span>  — партнерство<br> на выгодных условиях.<br>Мы всегда поддерживаем:</h2>
+					<div class="partners-card-wrapper">
+						<div class="partners-card" data-aos="fade-up">
+							<div class="partners-card__img"><img src="./img/v2/picture5.webp" width="630" height="320" alt="img"></div>
+							<p class="reg-20">Крупный, финансово стабильный бизнес, который регулярно пользуется услугами самозанятых специалистов</p>
+						</div>
+						<div class="partners-card" data-aos="fade-up">
+							<div class="partners-card__img"><img src="./img/v2/picture6.webp" width="630" height="320" alt="img"></div>
+							<p class="reg-20">Крупный, финансово стабильный бизнес, который регулярно пользуется услугами самозанятых специалистов</p>
+						</div>
+						<div class="partners-card" data-aos="fade-up">
+							<div class="partners-card__img"><img src="./img/v2/picture7.webp" width="630" height="320" alt="img"></div>
+							<p class="reg-20">Крупный, финансово стабильный бизнес, который регулярно пользуется услугами самозанятых специалистов</p>
+						</div>
+						<div class="partners-card" data-aos="fade-up">
+							<div class="partners-card__img"><img src="./img/v2/picture8.webp" width="630" height="320" alt="img"></div>
+							<p class="reg-20">Крупный, финансово стабильный бизнес, который регулярно пользуется услугами самозанятых специалистов</p>
+						</div>
+					</div><a class="btn mt-48" href="#!">Начать сотрудничество</a>
+				</div>
+			</section>
+			<section class="services" id="services">
+				<div class="container">
+					<h2 class="h2 txt-center">Помогаем найти опытных специалистов самых разных профессий</h2><a class="services-wrapper" href="#!">
+						<!--card 1-->
+						<div class="service-card" data-aos="zoom-in">
+							<div class="service-card__img"><img src="./img/v2/serv1.webp" width="475" height="488" alt="img"></div>
+							<div class="service-card__txt">
+								<div class="h5">Погрузочно-разгрузочные работы</div>
+								<p>Погрузка и разгрузка грузов с помощью специализированной техники или вручную</p><span class="cta-link"><span>Создать заказ</span>
+									<svg class="svg-right">
+										<use href="./img/spriteSvg.svg#svg-left"></use>
+									</svg></span>
+							</div>
+						</div>
+						<!--card 2-->
+						<div class="service-card" data-aos="zoom-in">
+							<div class="service-card__img"><img src="./img/v2/serv2.webp" width="328" height="218" alt="img"></div>
+							<div class="service-card__txt">
+								<div class="h5">Подсобные работы</div>
+								<p>Помощь при выполнении различных задач на строительных или других объектах</p><span class="cta-link"><span>Создать заказ</span>
+									<svg class="svg-right">
+										<use href="./img/spriteSvg.svg#svg-left"></use>
+									</svg></span>
+							</div>
+						</div>
+						<!--card 3-->
+						<div class="service-card" data-aos="zoom-in">
+							<div class="service-card__img"><img src="./img/v2/serv3.webp" width="328" height="218" alt="img"></div>
+							<div class="service-card__txt">
+								<div class="h5">Уборка</div>
+								<p>Очистка помещений, территорий или объектов от мусора, пыли и других загрязнений</p><span class="cta-link"><span>Создать заказ</span>
+									<svg class="svg-right">
+										<use href="./img/spriteSvg.svg#svg-left"></use>
+									</svg></span>
+							</div>
+						</div>
+						<!--card 4-->
+						<div class="service-card" data-aos="zoom-in">
+							<div class="service-card__img"><img src="./img/v2/serv4.webp" width="328" height="218" alt="img"></div>
+							<div class="service-card__txt">
+								<div class="h5">Расчистка участка</div>
+								<p>Избавление от кустарника, мусора и других преград для подготовки участка к дальнейшей работе</p><span class="cta-link"><span>Создать заказ</span>
+									<svg class="svg-right">
+										<use href="./img/spriteSvg.svg#svg-left"></use>
+									</svg></span>
+							</div>
+						</div>
+						<!--card 5-->
+						<div class="service-card" data-aos="zoom-in">
+							<div class="service-card__img"><img src="./img/v2/serv5.webp" width="475" height="488" alt="img"></div>
+							<div class="service-card__txt">
+								<div class="h5">Покос травы</div>
+								<p>Скашивание высокой травы с помощью газонокосилки или другого инструмента для поддержания ухоженного вида участка</p><span class="cta-link"><span>Создать заказ</span>
+									<svg class="svg-right">
+										<use href="./img/spriteSvg.svg#svg-left"></use>
+									</svg></span>
+							</div>
+						</div>
+						<!--card 6-->
+						<div class="service-card" data-aos="zoom-in">
+							<div class="service-card__img"><img src="./img/v2/serv6.webp" width="328" height="218" alt="img"></div>
+							<div class="service-card__txt">
+								<div class="h5">Спил деревьев</div>
+								<p>Спиливание деревьев с помощью специализированного инструмента для очистки или подготовки участка</p><span class="cta-link"><span>Создать заказ</span>
+									<svg class="svg-right">
+										<use href="./img/spriteSvg.svg#svg-left"></use>
+									</svg></span>
+							</div>
+						</div>
+						<!--card 7-->
+						<div class="service-card" data-aos="zoom-in">
+							<div class="service-card__img"><img src="./img/v2/serv7.webp" width="475" height="488" alt="img"></div>
+							<div class="service-card__txt">
+								<div class="h5">Сварка</div>
+								<p>Соединение металлических деталей с помощью сварочного оборудования для созд ания прочных и надежных конструкций</p><span class="cta-link"><span>Создать заказ</span>
+									<svg class="svg-right">
+										<use href="./img/spriteSvg.svg#svg-left"></use>
+									</svg></span>
+							</div>
+						</div>
+						<!--card 8-->
+						<div class="service-card" data-aos="zoom-in">
+							<div class="service-card__img"><img src="./img/v2/serv8.webp" width="328" height="218" alt="img"></div>
+							<div class="service-card__txt">
+								<div class="h5">Стрижка кустов</div>
+								<p>Обрезка кустарников и формирование живых изгородей или декоративных элементов на участке</p><span class="cta-link"><span>Создать заказ</span>
+									<svg class="svg-right">
+										<use href="./img/spriteSvg.svg#svg-left"></use>
+									</svg></span>
+							</div>
+						</div>
+						<!--card 9-->
+						<div class="service-card" data-aos="zoom-in">
+							<div class="service-card__img"><img src="./img/v2/serv9.webp" width="328" height="218" alt="img"></div>
+							<div class="service-card__txt">
+								<div class="h5">Домашний переезд</div>
+								<p>Помощь в перевозке мебели, вещей и других грузов с одного места на другое в пределах здания или города</p><span class="cta-link"><span>Создать заказ</span>
+									<svg class="svg-right">
+										<use href="./img/spriteSvg.svg#svg-left"></use>
+									</svg></span>
+							</div>
+						</div></a>
+				</div>
+			</section>
+			<!--========= BENEFITS =========-->
+			<section class="benefits">
+				<div class="container">
+					<h2 class="h2">Почему бизнес выбирает <span class="txt-pr2">«Рабочий легион»?</span></h2>
+					<div class="benefits-content" data-aos="fade-up">
+						<!--======= один элемент ======-->
+						<div class="benefit-card"><span class="fl-icon">
+								<svg class="svg-ic1">
+									<use href="./img/spriteSvg.svg#svg-ic1"></use>
+								</svg></span>
+							<div class="h3">Комплексное решение</div>
+							<p>«Рабочий легион» - это единая система для работы с самозанятыми. Мы поможем выполнить поиск, нанять, проконтролировать качество работ, а также выплатить зарплату и оформить необходимые отчеты</p>
+						</div>
+						<!--======= один элемент ======-->
+						<div class="benefit-card"><span class="fl-icon">
+								<svg class="svg-ic2">
+									<use href="./img/spriteSvg.svg#svg-ic2"></use>
+								</svg></span>
+							<div class="h3">Удобство использования</div>
+							<p>Интерфейс платформы – простой и интуитивно понятный. Для максимального комфорта пользователей разработано мобильное приложение и чат-бот</p>
+						</div>
+						<!--======= один элемент ======-->
+						<div class="benefit-card"><span class="fl-icon">
+								<svg class="svg-ic3">
+									<use href="./img/spriteSvg.svg#svg-ic3"></use>
+								</svg></span>
+							<div class="h3">Быстрый подбор</div>
+							<p>Мы даем возможность сэкономить время и ресурсы на поиск и отбор временных специалистов.  Нужны грузчики или бригада строителей? К вашим услугам быстрая связь с исполнителем и возможность сотрудничать с ним в дальнейшем</p>
+						</div>
+						<!--======= один элемент ======-->
+						<div class="benefit-card"><span class="fl-icon">
+								<svg class="svg-ic4">
+									<use href="./img/spriteSvg.svg#svg-ic4"></use>
+								</svg></span>
+							<div class="h3">Обучение и поддержка</div>
+							<p>Мы научим вас работать с платформой, расскажем о ее возможностях, обеспечим доступ к ней в любое время суток, назначим ответственного эксперта, который будет всегда на связи и выполнит настройку системы</p>
+						</div>
+						<!--======= один элемент ======-->
+						<div class="benefit-card"><span class="fl-icon">
+								<svg class="svg-ic5">
+									<use href="./img/spriteSvg.svg#svg-ic5"></use>
+								</svg></span>
+							<div class="h3">Выгодные тарифы</div>
+							<p>Партнерство с нами могут позволить себе даже мелкие предприятия со стабильным доходом. У нас доступные цены, регулярные акции для новичков, а также программа лояльности для постоянных клиентов</p>
+						</div>
+						<!--======= один элемент ======-->
+						<div class="benefit-card"><span class="fl-icon">
+								<svg class="svg-ic6">
+									<use href="./img/spriteSvg.svg#svg-ic6"></use>
+								</svg></span>
+							<div class="h3">Автоматизация процессов</div>
+							<p>Объем ручной работы значительно сократится, рутинные задачи будут автоматизированы. Мы гарантируем снижение затраты на управление персоналом, а также оптимизацию расходов</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--=============== CTA ============-->
+			<section class="cta bg-light">
+				<div class="container">
+					<div class="cta-content">
+						<!--========LEFT COLUMN ========-->
+						<div class="cta-txt">
+							<h3 class="h3">Оставьте заявку на доступ к цифровой платформе <span class="txt-pr2">«Рабочий легион»</span> и находите исполнителей для своего бизнеса уже сегодня!</h3><a class="btn" href="#!">Стать партнером</a>
+						</div>
+						<!--========RIGHT COLUMN ========-->
+						<div class="serv-list">
+							<div class="h3"> А также получите:</div>
+							<ul class="mark-list reg-20">
+								<li>50% скидку на абонентскую плату в первый месяц</li>
+								<li>Постоянную скидку 10% на абонентскую плату после 1 года сотрудничества</li>
+								<li>Настройку и интеграцию платформы под Ваши бизнес-процессы</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cooperation pb-124">
+				<div class="container">
+					<h2 class="h2 h2--special txt-center">Как начать сотрудничество?</h2>
+					<div class="cooperation-grid" data-aos="fade-up">
+						<!--==== lists ====-->
+						<div class="cooperation-list">
+							<div class="benefit-card">
+								<div class="benefit-card-head"><span class="fl-icon">1</span>
+									<div class="h5">Оставьте заявку<br>на сотрудничество</div>
+								</div>
+								<p>Дождитесь звонка менеджера, получите ответы на интересующие вопросы</p>
+							</div>
+							<div class="benefit-card">
+								<div class="benefit-card-head"><span class="fl-icon">2</span>
+									<div class="h5">Партнерское<br>соглашение</div>
+								</div>
+								<p>Заключите партнерское соглашение с сервисом «Рабочий легион». Выполните оплату, получите доступ к платформе, установите приложение</p>
+							</div>
+							<div class="benefit-card">
+								<div class="benefit-card-head"><span class="fl-icon">3</span>
+									<div class="h5">Внедрение и запуск<br>платформы </div>
+								</div>
+								<p>Внедрите и запустите платформу под руководством экспертов. Проконтролируйте настройку сервиса под ваши бизнес-процессы</p>
+							</div>
+							<div class="benefit-card">
+								<div class="benefit-card-head"><span class="fl-icon">4</span>
+									<div class="h5">Нанимайте<br>рабочих</div>
+								</div>
+								<p>Нанимайте рабочих для выполнения конкретных задач. Оптимизируйте рабочий процесс, оставляйте отзывы об исполнителях</p>
+							</div>
+						</div>
+						<!--====image banner ====-->
+						<div class="cooperation-banner"><img src="./img/v2/picture9.webp" width="588" height="640" alt="img"></div>
+					</div>
+				</div>
+			</section>
+			<section class="price bg-dark pb-124" id="price">
+				<div class="container">
+					<h2 class="h2 h2--special txt-center">Тарифы</h2>
+					<div class="price-cards">
+						<!--====card ===-->
+						<div class="price-card">
+							<div class="h4">Паушальный взнос</div>
+							<div class="h2">200 000 ₽</div>
+							<ul class="mark-list reg-20">
+								<li>Доступ к платформе и мобильному приложению</li>
+								<li>Настройка и интеграция платформы под Ваши бизнес-процессы</li>
+								<li>Обучение персонала работе с платформой</li>
+								<li>Техническая поддержка и консультации экспертов</li>
+								<li>Доступ к базе знаний и методическим рекомендациям</li>
+							</ul><a class="btn w-100" href="#!">Сотрудничать</a>
+						</div>
+						<!--====card ===-->
+						<div class="price-card">
+							<div class="h4">Пользование системой</div>
+							<div class="h2">15 000 ₽</div>
+							<ul class="mark-list reg-20">
+								<li>Использование функционала платформы</li>
+								<li>Доступ к базе проверенных самозанятых исполнителей</li>
+								<li>Автоматический расчет и оплата налогов за самозанятых</li>
+								<li>Техническое обслуживание и развитие платформы</li>
+							</ul><a class="btn w-100" href="#!">Сотрудничать</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<!--====== FOOTER =========-->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<!--=======LOGO =======--><a class="logo" href="#!">
+						<svg class="svg-logo">
+							<use href="./img/spriteSvg.svg#logo"></use>
+						</svg></a>
+					<!--=== single block ====-->
+					<div class="footer-column">
+						<!--===== выбор города ====-->
+						<div class="custom-select-wrapper">
+							<div class="custom-select no-border">
+								<div class="custom-select__trigger"><span>Москва</span>
+									<div class="arrow"></div>
+								</div>
+								<!--===== выпадающий список ====-->
+								<div class="custom-options"><span class="custom-option selected" data-value="Москва">Москва</span><span class="custom-option" data-value="Саратов">Саратов</span><span class="custom-option" data-value="Ростов">Ростов</span><span class="custom-option" data-value="Санкт-Петербург">Санкт-Петербург</span></div>
+							</div>
+						</div>
+						<nav class="footer-menu"><a href="#!">Пользовательское соглашение</a><a href="#!">Соглашение на обработку персональных данных</a><a href="#!">Политика конфиденциальности</a><a href="#!">Публичная оферта</a></nav>
+					</div>
+					<!--=== single block ====-->
+					<div class="footer-column">
+						<nav class="footer-menu"><a href="#!">Создать заказ</a><a href="#!">Как стать партнером</a><a href="#!">Как стать исполнителем</a><a href="#!">О сервисе</a></nav>
+					</div>
+					<!--=== single block ====-->
+					<div class="footer-column footer-column--info">
+						<p>ИП Терентьев Константин Генадьевич</p>
+						<p>ИНН: 893218834823888283</p><a class="contact-link" href="tel:+71234567899">+7 123 456 78 99</a><a class="contact-link" href="mailto:info@mail.ru">info@mail.ru</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--===============MODAL ==============-->
+		<div class="modal-frame-wrapper" frame-modal="popup">
+			<div class="modal-frame">
+				<div class="icon-close" frame-close></div>
+				<div class="modal-frame__body">
+					<div class="modal-frame__img"><img src="./img/form-bg.webp" alt="img"></div>
+					<div class="modal-form">
+						<div class="h2">Оформление заказа</div>
+						<form class="feedback-form" action="" method="method">
+							<div class="form-wrapper">
+								<!--==== колонка с полями ===-->
+								<div class="form-wrapper__col">
+									<!--===== имя ===-->
+									<div class="form-item">
+										<div class="label-txt visible-desktop">Текст на кириллице</div>
+										<input class="form-input" type="text" name="">
+										<p class="fake-placeholder">Ведите имя <span>*</span></p>
+									</div>
+									<!--===== телефон ===-->
+									<div class="form-item">
+										<input class="form-input" type="text" name="">
+										<p class="fake-placeholder">Ведите телефон <span>*</span></p>
+										<p class="error">This is for error messages</p>
+									</div>
+									<!--====INPUTS GROUP ===-->
+									<div class="form-row fl-row">
+										<!--===== календарь ===-->
+										<div class="form-item form-item--datapicker">
+											<svg class="svg-calend">
+												<use href="./img/spriteSvg.svg#svg-calend"></use>
+											</svg>
+											<div class="mydatepicker" id="datepicker">
+												<input class="form-input datepicker" type="text">
+												<p class="fake-placeholder">Выберите дату <span>*</span></p>
+											</div>
+										</div>
+										<!--===== время ===-->
+										<div class="form-item">
+											<input class="form-input timepicker" type="text" name="timepicker">
+											<p class="fake-placeholder" id="fake">Укажите время <span>*</span></p>
+										</div>
+									</div>
+									<!--===== адрес ===-->
+									<div class="form-item mt-16">
+										<div class="label-txt">г. Ростов-на -Дону</div>
+										<input class="form-input" type="text" name="">
+										<p class="fake-placeholder">Ведите адрес без города <span>*</span></p>
+									</div>
+								</div>
+								<!--==== колонка с полями ===-->
+								<div class="form-wrapper__col">
+									<!--===== Продолжительность  ===-->
+									<div class="form-item mt-16--mobile">
+										<div class="label-txt">Число или диапазон</div>
+										<input class="form-input" type="text" name="">
+										<p class="fake-placeholder">Продолжительность работы <span>*</span></p>
+										<p class="error">This is for error messages</p>
+									</div>
+									<!--===== Сколько рабочих ===-->
+									<div class="form-item">
+										<input class="form-input" type="text" name="">
+										<p class="fake-placeholder">Сколько рабочих нужно? <span>*</span></p>
+									</div>
+									<!--===== Message ===-->
+									<div class="form-item">
+										<textarea class="form-input"></textarea>
+										<p class="fake-placeholder">Опишите, что нужно сделать <span>*</span></p>
+									</div>
+								</div>
+							</div>
+							<button class="btn w-100" type="submit">Оформить заказ</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--===============MODAL ==============-->
+		<div class="modal-frame-wrapper success-popup" frame-modal="success">
+			<div class="modal-frame">
+				<div class="icon-close" frame-close></div>
+				<div class="modal-frame__body">
+					<div class="success-icon">
+						<svg class="big-check">
+							<use href="./img/spriteSvg.svg#big-check"></use>
+						</svg>
+					</div>
+					<div class="h3">Заявка успешно отправлена</div>
+					<p>Наш менеджер свяжется с вами в&nbsp;ближайшее время</p>
+					<button class="btn" frame-close>Хорошо</button>
+				</div>
+			</div>
+		</div>
+		<!--=============== jquery ===================-->
+		<script src="./libs/jquery/jquery-3.0.0.min.js"></script>
+		<!--=======aos =============-->
+		<script src="./libs/aos/aos.js"></script>
+		<script>
+			AOS.init({
+				 duration: 600,
+				  disable: 'mobile',
+				  once: true
+			});
+			
+		</script>
+		<!--=============== мои скрипты ===================	-->
+		<script src="js/main.js"></script>
+	</body>
+</html>
