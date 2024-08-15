@@ -1,26 +1,105 @@
-mixin sc(img, title, txt)
-	//======single card =====
-	a(href="#!").service-card
-		.sc__img
-			img(src="./img/serv"+ img +".webp", width="410" alt="alt")
-		.sc__txt
-			h3.h5 #{title}
-			p #{txt}
-			
-			span.cta-link
-				span Создать заказ
-				svg.svg-right
-					use( href='./img/spriteSvg.svg#svg-left')
+
 section.services#services
 	.container
-		h2.h2 Услуги
-		.services-wrapper
-			+sc(1, 'Погрузочно-разгрузочные работы', 'Погрузка и разгрузка грузов с помощью специализированной техники или вручную')
-			+sc(2, 'Подсобные работы', 'Помощь при выполнении различных задач на строительных или других объектах')
-			+sc(3, 'Уборка', 'Очистка помещений, территорий или объектов от мусора, пыли и других загрязнений')
-			+sc(4, 'Расчистка участка', 'Избавление от кустарника, мусора и других преград для подготовки участка к дальнейшей работе')
-			+sc(5, 'Спил деревьев', 'Спиливание деревьев с помощью специализированного инструмента для очистки или подготовки участка')
-			+sc(6, 'Покос травы', 'Скашивание высокой травы с помощью газонокосилки или другого инструмента для поддержания ухоженного вида участка')
-			+sc(7, 'Стрижка кустов', 'Обрезка кустарников и формирование живых изгородей или декоративных элементов на участке')
-			+sc(8, 'Домашний переезд', 'Помощь в перевозке мебели, вещей и других грузов с одного места на другое в пределах здания или города')
-			+sc(9, 'Сварка', 'Соединение металлических деталей с помощью сварочного оборудования для созд ания прочных и надежных конструкций')
+		h2.h2.txt-center Помогаем найти опытных специалистов самых разных профессий
+		a(href="#!").services-wrapper
+			//card 1
+			.service-card
+				.service-card__img
+					img(src="./img/v2/serv1.webp", width="475" height="488" alt="img")
+				.service-card__txt
+					.h5 Погрузочно-разгрузочные работы
+					p Погрузка и разгрузка грузов с помощью специализированной техники или вручную
+					span.cta-link
+						span Создать заказ
+						svg.svg-right
+							use( href='./img/spriteSvg.svg#svg-left')
+			//card 2
+			.service-card
+				.service-card__img
+					img(src="./img/v2/serv2.webp",width="328" height="218"  alt="img")
+				.service-card__txt
+					.h5 Подсобные работы
+					p Помощь при выполнении различных задач на строительных или других объектах
+					span.cta-link
+						span Создать заказ
+						svg.svg-right
+							use( href='./img/spriteSvg.svg#svg-left')
+			//card 3
+			.service-card
+				.service-card__img
+					img(src="./img/v2/serv3.webp",width="328" height="218"  alt="img")
+				.service-card__txt
+					.h5 Уборка
+					p Очистка помещений, территорий или объектов от мусора, пыли и других загрязнений
+					span.cta-link
+						span Создать заказ
+						svg.svg-right
+							use( href='./img/spriteSvg.svg#svg-left')
+			//card 4
+			.service-card
+				.service-card__img
+					img(src="./img/v2/serv4.webp", width="328" height="218"  alt="img")
+				.service-card__txt
+					.h5 Расчистка участка
+					p Избавление от кустарника, мусора и других преград для подготовки участка к дальнейшей работе
+					span.cta-link
+						span Создать заказ
+						svg.svg-right
+							use( href='./img/spriteSvg.svg#svg-left')
+			//card 5
+			.service-card
+				.service-card__img
+					img(src="./img/v2/serv5.webp",width="475" height="488" alt="img")
+				.service-card__txt
+					.h5 Покос травы
+					p Скашивание высокой травы с помощью газонокосилки или другого инструмента для поддержания ухоженного вида участка
+					
+					span.cta-link
+						span Создать заказ
+						svg.svg-right
+							use( href='./img/spriteSvg.svg#svg-left')
+			//card 6
+			.service-card
+				.service-card__img
+					img(src="./img/v2/serv6.webp",  width="328" height="218"  alt="img")
+				.service-card__txt
+					.h5 Спил деревьев
+					p Спиливание деревьев с помощью специализированного инструмента для очистки или подготовки участка
+					span.cta-link
+						span Создать заказ
+						svg.svg-right
+							use( href='./img/spriteSvg.svg#svg-left')
+			//card 7
+			.service-card
+				.service-card__img
+					img(src="./img/v2/serv7.webp", width="475" height="488" alt="img")
+				.service-card__txt
+					.h5 Сварка
+					p Соединение металлических деталей с помощью сварочного оборудования для созд ания прочных и надежных конструкций
+					span.cta-link
+						span Создать заказ
+						svg.svg-right
+							use( href='./img/spriteSvg.svg#svg-left')
+			//card 8
+			.service-card
+				.service-card__img
+					img(src="./img/v2/serv8.webp", width="328" height="218"  alt="img")
+				.service-card__txt
+					.h5 Стрижка кустов
+					p Обрезка кустарников и формирование живых изгородей или декоративных элементов на участке
+					span.cta-link
+						span Создать заказ
+						svg.svg-right
+							use( href='./img/spriteSvg.svg#svg-left')
+			//card 9
+			.service-card
+				.service-card__img
+					img(src="./img/v2/serv9.webp", width="328" height="218"  alt="img")
+				.service-card__txt
+					.h5 Домашний переезд
+					p Помощь в перевозке мебели, вещей и других грузов с одного места на другое в пределах здания или города
+					span.cta-link
+						span Создать заказ
+						svg.svg-right
+							use( href='./img/spriteSvg.svg#svg-left')

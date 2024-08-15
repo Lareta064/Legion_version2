@@ -1,7 +1,8 @@
 .partners{
 	padding-block:124px;
 	position: relative;
-	// background-image: url('../img/v2/light-bg.webp');
+	&>*{position: relative; z-index: 3;}
+	.btn {width: 100%}
 	&:after{
 		content: '';
 		inset:0;
@@ -59,5 +60,6 @@
 		padding-block: 56px;
 	  .h2.txt-center{text-align: left;}
 		&-card__img {aspect-ratio: 327/320;}
+		
 	}
 }
