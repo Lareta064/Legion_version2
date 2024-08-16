@@ -51,59 +51,23 @@ footer.footer
 			.modal-form
 				.h2 Оформление заказа
 				form.feedback-form(action="" method="method")
-					.form-wrapper
-						//==== колонка с полями ===
-						.form-wrapper__col
-							//===== имя ===
-							.form-item
-								.label-txt.visible-desktop Текст на кириллице
-								input.form-input(type="text" name="")
-								p.fake-placeholder Ведите имя #[span *]
-							//===== телефон ===
-							.form-item
-								input.form-input(type="text" name="")
-								p.fake-placeholder Ведите телефон #[span *]
-								p.error This is for error messages
-							//====INPUTS GROUP ===
-							.form-row.fl-row
-								//===== календарь ===
-								.form-item.form-item--datapicker
-									svg.svg-calend
-										use( href='./img/spriteSvg.svg#svg-calend')
-									.mydatepicker#datepicker
-										input.form-input(type="text" class="datepicker" )
-										p.fake-placeholder Выберите дату #[span *]
-								
-								//===== время ===
-								.form-item
-									input.form-input.timepicker(type="text" name="timepicker")
-									p#fake.fake-placeholder Укажите время #[span *]
-							
-							
-							//===== адрес ===
-							.form-item.mt-16
-								.label-txt г. Ростов-на -Дону
-								input.form-input(type="text" name="")
-								p.fake-placeholder Ведите адрес без города #[span *]
+					//===== имя ===
+					.form-item
 						
-						//==== колонка с полями ===
-						.form-wrapper__col
-							//===== Продолжительность  ===
-							.form-item.mt-16--mobile
-								.label-txt Число или диапазон
-								input.form-input(type="text" name="")
-								p.fake-placeholder Продолжительность работы #[span *]
-								p.error This is for error messages
-							//===== Сколько рабочих ===
-							.form-item
-								input.form-input(type="text" name="")
-								p.fake-placeholder Сколько рабочих нужно? #[span *]
+						input.form-input(type="text" name="")
+						p.fake-placeholder Ведите имя #[span *]
+					//===== имя ===
+					.form-item
+						
+						input.form-input(type="text" name="")
+						p.fake-placeholder Ведите email #[span *]
+					//===== телефон ===
+					.form-item
+						input.form-input(type="text" name="")
+						p.fake-placeholder Ведите телефон #[span *]
+						p.error This is for error messages
 							
-							//===== Message ===
-							.form-item
-								textarea.form-input
-								p.fake-placeholder Опишите, что нужно сделать #[span *]
-					button(type="submit").btn.w-100 Оформить заказ
+					button(type="submit").btn.w-100 Отправить
 
 
 //===============MODAL ==============

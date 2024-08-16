@@ -5,15 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 	/*===============MOBILE MENU ==================*/
 	if (menuToggle) {
-		
-		/*   клик по иконке гамбургер*/  
+		 
 		menuToggle.addEventListener('click', ()=> {
 			
 			if (menuToggle.classList.contains('active')) {
 				menuToggle.classList.remove('active');
 			    mobileMenu.classList.remove('active');
 				bodyEl.classList.remove('lock');
-				
 			
 			} else {
 				menuToggle.classList.add('active');
@@ -60,65 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
-    /* ========== плагин календаря ============ */
-  if($( ".datepicker" ).length > 0){
-	
-		$.datepicker.regional['ru'] = {
-			closeText: 'Закрыть',
-			prevText: 'Предыдущий',
-			nextText: 'Следующий',
-			currentText: 'Сегодня',
-			monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
-			monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
-			dayNames: ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'],
-			dayNamesShort: ['вск','пнд','втр','срд','чтв','птн','сбт'],
-			dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
-			weekHeader: 'Не',
-			dateFormat: 'dd.mm.yy',
-			firstDay: 1,
-			isRTL: false,
-			showMonthAfterYear: false,
-			yearSuffix: ''
-		};
-		$.datepicker.setDefaults($.datepicker.regional['ru']);
-
-		$(function(){
-			$(".datepicker").datepicker({
-				onSelect: function() {
-				// Проверяем, не пустой ли инпут после выбора даты
-				if ($(this).val()) {
-					// Если не пустой, добавляем класс 'not-empty' к родительскому блоку
-					$(this).closest('.form-item').addClass('not-empty');
-				}
-				}
-			});
-		});
-
-	}
-	if($( ".timepicker" ).length > 0){
-
-		$('.timepicker').timepicker({
-			timeFormat: 'HH:mm',
-			interval: 60,
-			minTime: '8:00am',
-			maxTime: '23:00pm',
-			defaultTime: '',
-			startTime: '08:00',
-			dynamic: false,
-			dropdown: true,
-			scrollbar: true,
-			change: (time) => {
-				const fakePlaceholder = document.querySelector('#fake');
-				console.log(fakePlaceholder)
-				if(time)
-					fakePlaceholder.classList.add('active');
-				else
-					fakePlaceholder.classList.remove('active');
-			}
-		});
-		
-	}
-
 	/*************custom-select************ */
 	
 	document.querySelectorAll('.custom-select-wrapper').forEach(wrapper => {
@@ -148,30 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 
-	/************TABS************ */
-	const tabsContainers = document.querySelectorAll('.tabs-container');
-
-	tabsContainers.forEach(container => {
-		const tabs = container.querySelectorAll('.tab');
-		const contents = container.querySelectorAll('.tab-content');
-		
-		tabs.forEach(tab => {
-		tab.addEventListener('click', () => {
-			tabs.forEach(innerTab => innerTab.classList.remove('active'));
-			tab.classList.add('active');
-
-			contents.forEach(content => content.classList.remove('active'));
-			const activeContent = container.querySelector(tab.getAttribute('data-tab-target'));
-
-			// Проверяем, существует ли элемент activeContent перед добавлением класса
-			if (activeContent) {
-			activeContent.classList.add('active');
-			} else {
-			console.error('Ошибка: Нет элемента соответствующего data-tab-target:', tab.getAttribute('data-tab-target'));
-			}
-		});
-		});
-	});
 	/* ======== modal  ===============*/
 	const modalFramesOpen = document.querySelectorAll('[frame-btn]');
 	const modalFrames = document.querySelectorAll('[frame-modal]');
@@ -204,8 +119,6 @@ document.addEventListener("DOMContentLoaded", function () {
 				e.preventDefault();
 				item.closest('[frame-modal]').classList.remove('visible');
 				bodyEl.classList.remove('lock');
-
-
 			});
 		}
 		/*=============== закрыть модалки по клику вне ===============*/
